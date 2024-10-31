@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate, useLocation, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation, Link } from 'react-router-dom';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import Welcome from './components/Welcome'; 
@@ -18,11 +18,10 @@ const App = () => {
           <p>Discover amazing content and connect with a vibrant community.</p>
         </div>
         <Routes>
-          {/* Redirect from '/' and '/login' to '/welcome' */}
-          <Route path="/" element={<Navigate to="/welcome" />} />
-          <Route path="/login" element={<Navigate to="/welcome" />} /> {/* Redirect to welcome */}
+          {/* Redirect from '/' to '/login' by default */}
+          <Route path="/" element={<Login />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/welcome" element={<Welcome />} /> {/* Welcome route */}
           <Route path="/:name" element={<Welcome />} /> {/* Dynamic route */}
         </Routes>
 
@@ -44,3 +43,5 @@ const AppWrapper = () => (
 );
 
 export default AppWrapper;
+
+
