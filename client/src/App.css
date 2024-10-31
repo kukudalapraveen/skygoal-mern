@@ -1,13 +1,12 @@
-/* App.css */
 
 .background-container {
-  background-image: url('./assets/background.jpg'); /* Replace with your image path */
+  background-image: url('./assets/background.jpg'); 
   background-size: cover;
   background-position: center;
   width: 100vw;
   height: 100vh;
   position: relative;
-
+  filter: drop-shadow(1px);
 }
 
 .overlay {

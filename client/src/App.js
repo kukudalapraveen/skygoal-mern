@@ -16,6 +16,8 @@ const App = () => {
         <div className="welcome-message">
           <h1>Welcome to Our Platform!</h1>
           <p>Discover amazing content and connect with a vibrant community.</p>
+          <p>Happy Diwali!!!!.</p>
+
         </div>
         <Routes>
           {/* Redirect from '/' to '/login' by default */}
