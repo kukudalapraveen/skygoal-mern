@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/" element={<Login />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/:name" element={<Welcome />} /> {/* Dynamic route */}
+          <Route path="/:name" element={<Welcome />} /> {/* Dynamic route here */}
         </Routes>
 
         {!isSignupPage && (
