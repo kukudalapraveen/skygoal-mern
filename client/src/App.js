@@ -18,10 +18,11 @@ const App = () => {
           <p>Discover amazing content and connect with a vibrant community.</p>
         </div>
         <Routes>
-          {/* Redirect from '/' to '/login' by default */}
-          <Route path="/" element={<Navigate to="/login" />} />
-          <Route path="/login" element={<Login />} />
+          {/* Redirect from '/' and '/login' to '/welcome' */}
+          <Route path="/" element={<Navigate to="/welcome" />} />
+          <Route path="/login" element={<Navigate to="/welcome" />} /> {/* Redirect to welcome */}
           <Route path="/signup" element={<Signup />} />
+          <Route path="/welcome" element={<Welcome />} /> {/* Welcome route */}
           <Route path="/:name" element={<Welcome />} /> {/* Dynamic route */}
         </Routes>
 
@@ -43,5 +44,3 @@ const AppWrapper = () => (
 );
 
 export default AppWrapper;
-
-
