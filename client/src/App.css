@@ -1,3 +1,22 @@
+.home-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+.signup-home-button {
+  position: absolute;
+  top: 250px;
+  right: 500px;
+}
 
 .background-container {
   background-image: url('./assets/background.jpg'); 
